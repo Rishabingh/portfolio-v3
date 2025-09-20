@@ -4,17 +4,14 @@ import { Sun, Moon } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useScroll from '@/hooks/useScroll';
 const Header = () => {
-  // hero section
-  // about me
-  // skills 
-  // projects 
-  // contact 
-  // exp/cert/education
+
   const [theme, setTheme] = useState("dark")
+  const scrolled = useScroll(50)
   return (
-    <div className='fixed left-0 right-0 top-0'>
-      <nav className='flex justify-around w-full p-8 items-center font-inter'>
+    <div className='fixed left-0 right-0 top-0 z-40'>
+      <nav className= {`flex justify-around w-full items-center font-inter transition-all duration-300 px-8 ${scrolled ? 'backdrop-blur-md bg-black/30 py-3' : 'bg-transparent py-8'}`}>
         <ul className='flex gap-12 items-center'>
           <li>
             <Link
@@ -38,7 +35,7 @@ const Header = () => {
           smooth={true}
           duration={500}
           activeClass='active'
-          className="cursor-pointer"
+          className="cursor-pointer transition-colors duration-300"
           offset={-250}
           >
             Home
@@ -50,7 +47,8 @@ const Header = () => {
           smooth={true}
           duration={500}
           activeClass='active'
-          className="cursor-pointer"
+          className="cursor-pointer transition-colors duration-300"
+          offset={-180}
           >
             About-Me
             </ScrollLink></li>
@@ -60,8 +58,9 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={500}
+          offset={-180}
           activeClass='active'
-          className="cursor-pointer"
+          className="cursor-pointer transition-colors duration-300"
           >
             Skills
             </ScrollLink></li>
@@ -71,10 +70,35 @@ const Header = () => {
           spy="true"
           smooth={true}
           duration={500}
+          offset={-180}
           activeClass='active'
-          className="cursor-pointer"
+          className="cursor-pointer transition-colors duration-300"
           >
             Projects
+            </ScrollLink></li>
+            
+          <li><ScrollLink
+          to="contact"
+          spy="true"
+          smooth={true}
+          duration={500}
+          offset={-180}
+          activeClass='active'
+          className="cursor-pointer transition-colors duration-300"
+          >
+            Contact
+            </ScrollLink></li>
+
+          <li><ScrollLink
+          to="education"
+          spy="true"
+          smooth={true}
+          duration={500}
+          offset={-180}
+          activeClass='active'
+          className="cursor-pointer transition-colors duration-300"
+          >
+            Education
             </ScrollLink></li>
  
         </ul>

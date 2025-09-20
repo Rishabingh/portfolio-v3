@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='lg:w-[65%] mx-auto my-10' id='about'>
-      <div className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>About</div>
+      <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>About</h1>
       <div className='grid grid-cols-3 gird-rows-2 gap-4'>
         <div className='col-span-2 row-span-2 bg-slate-950 p-6 rounded-3xl text-lg tracking-widest leading-8 bg-cover ' style={{backgroundImage: "url('/laptop-photo-bg.webp')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <h2 className='text-[#3b82f6] font-poppins font-semibold my-7'>My Journey</h2>
@@ -13,7 +13,7 @@ const About = () => {
 
         </div>
         <div className='bg-slate-950 p-6 rounded-3xl text-lg tracking-widest leading-8'>
-          <h3 className='text-[#3b82f6] font-poppins font-semibold'>Beyond The Code</h3>
+          <h2 className='text-[#3b82f6] font-poppins font-semibold'>Beyond The Code</h2>
           When I'm not coding, you can usually find me exploring the latest in sci-fi literature or photographing the world around me.
         </div>
 

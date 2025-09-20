@@ -16,5 +16,7 @@
 }
 
 .active {
-  color: #00ff99;
+  color: #3b82f6;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
