@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Education = () => {
   return (
-    <div className="mx-auto my-10 lg:w-[65%]" id="projects">
+    <div className="mx-auto my-10 lg:w-[65%]" id="education">
       <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>Education</h1>
       <div className='grid grid-cols-3 grid-rows-2 gap-4'>
          <div className='bg-slate-950 p-3 rounded-3xl col-span-2 row-span-2 ' >
