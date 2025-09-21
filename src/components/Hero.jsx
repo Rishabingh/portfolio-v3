@@ -1,6 +1,7 @@
+import AnimatedLogo from "./AnimatedLogo"
 import Image from "next/image"
+import HeroApp from '@/components/HeroApps'
 import { Download, Github, Twitter, Linkedin } from "lucide-react"
-
 const Hero = () => {
   return (
     <div className="flex lg:w-[60%] justify-self-center" id="home">
@@ -12,33 +13,15 @@ const Hero = () => {
         </div>
 
         <div className="mt-8 flex gap-6 items-center">
+
           <button className="bg-transparent text-[#3b82f6] border-2 border-[#3b82f6] px-6 py-3 rounded-4xl hover:bg-[#2563eb] hover:text-black transition duration-300 flex gap-2">Download Cv <Download size={20} /> </button>
-          <div className="flex gap-4 items-center justify-center">
-            <a 
-              href="https://github.com/rishabingh" 
-              target="_blank" 
-              rel="noopener noreferrer"
-             >
-                <Github size={50} className="text-[#3b82f6] transition duration-300 border-2 border-[#3b82f6] rounded-full p-2 hover:bg-[#2563eb] hover:text-black"/>
-             </a>
-            <a 
-              href="https://x.com/rishabsiingh" 
-              target="_blank" 
-              rel="noopener noreferrer"
-             >
-                <Twitter size={50} className="text-[#3b82f6] transition duration-300 border-2 border-[#3b82f6] rounded-full p-2 hover:bg-[#2563eb] hover:text-black"/>
-             </a>
-            <a 
-              href="https://www.linkedin.com/in/rishabsingh2/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-             >
-                <Linkedin size={50} className="text-[#3b82f6] transition duration-300 border-2 border-[#3b82f6] rounded-full p-2 hover:bg-[#2563eb] hover:text-black"/>
-             </a>
-          </div>
+
+          <HeroApp />
+
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center">
+      <div className="flex-1 flex justify-center items-center relative">
+ 
         <Image
         src="/compressed-final.webp"
         width={400}
@@ -46,6 +29,10 @@ const Hero = () => {
         alt="my-photo"
         className="rounded-full"
        />
+
+       <AnimatedLogo 
+       className = 'absolute top-0 w-full h-full scale-90'
+      />
       </div>
     </div>
   )

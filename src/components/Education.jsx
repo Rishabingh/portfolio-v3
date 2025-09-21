@@ -1,10 +1,24 @@
-
+'use client'
+import {motion} from 'motion/react'
 const Education = () => {
   return (
     <div className="mx-auto my-10 lg:w-[65%]" id="education">
       <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>Education</h1>
       <div className='grid grid-cols-3 grid-rows-2 gap-4'>
-         <div className='bg-slate-950 p-3 rounded-3xl col-span-2 row-span-2 ' >
+         <motion.div className='bg-slate-950 p-3 rounded-3xl col-span-2 row-span-2 ' 
+          initial={{
+          opacity: 0,
+          x: -200
+        }}
+        whileInView ={{
+          opacity: 1,
+          x: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+         >
             <h3 className="text-xl font-bold text-blue-400 mb-4">University Degree</h3>
               <div className="space-y-3 text-gray-300">
                 <p>
@@ -26,9 +40,22 @@ const Education = () => {
                   </ul>
                 </div>
               </div>
-         </div>
+         </motion.div>
 
-         <div className='bg-slate-950 p-3 rounded-3xl bg-center bg-cover text-shadow-md text-shadow-black' style={{backgroundImage: 'url(/book-shelf-Edited.webp'}}>
+         <motion.div className='bg-slate-950 p-3 rounded-3xl bg-center bg-cover text-shadow-md text-shadow-black' style={{backgroundImage: 'url(/book-shelf-Edited.webp'}} 
+         initial={{
+          opacity: 0,
+          x: 200
+        }}
+        whileInView ={{
+          opacity: 1,
+          x: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+         >
             <h3 className="text-xl font-bold text-blue-400 mb-4">Higher Secondary Education</h3>
             <div className="space-y-3 text-gray-300">
               <p>
@@ -47,9 +74,22 @@ const Education = () => {
                 <strong>Stream:</strong> Science (PCM)
               </p>
             </div>
-         </div>
+         </motion.div>
 
-         <div className='bg-slate-950 p-3 rounded-3xl'>
+         <motion.div className='bg-slate-950 p-3 rounded-3xl'
+          initial={{
+          opacity: 0,
+          x: 200
+        }}
+        whileInView ={{
+          opacity: 1,
+          x: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+         >
             <h3 className="text-xl font-bold text-blue-400 mb-4">Certifications</h3>
             <div className="space-y-4 text-gray-300">
               <div>
@@ -62,7 +102,7 @@ const Education = () => {
               </div>
             </div>
 
-         </div>
+         </motion.div>
       </div>
 
 

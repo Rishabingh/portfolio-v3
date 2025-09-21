@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image"
+import {motion} from 'motion/react'
 
 const Skills = () => {
   return (
@@ -6,7 +8,20 @@ const Skills = () => {
         <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>Skills</h1>
         <div className='grid grid-cols-3 gap-8'>
 
-          <div className="frontend-development bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col">
+          <motion.div className="frontend-development bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col"
+          initial={{
+          opacity: 0,
+          x: -200
+        }}
+        whileInView ={{
+          opacity: 1,
+          x: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+          >
             <h2 className="text-[#3b82f6] font-poppins font-semibold text-lg">Frontend Development</h2>
             <ul className="flex flex-wrap gap-4 flex-col">
               <li className="flex items-center gap-2 group">
@@ -48,9 +63,22 @@ const Skills = () => {
                 <span>Tailwind CSS</span>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="backend-development bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col">
+          <motion.div className="backend-development bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col"
+          initial={{
+          opacity: 0,
+          y: 200
+        }}
+        whileInView ={{
+          opacity: 1,
+          y: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+          >
             <h2 className="text-[#3b82f6] font-poppins font-semibold text-lg">Backend & Database</h2>
             <ul className="flex flex-wrap gap-4 flex-col">
               <li className="flex items-center gap-2">
@@ -94,9 +122,22 @@ const Skills = () => {
                 <span>JsonWebToken</span>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="tools-and-platforms bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col">
+          <motion.div className="tools-and-platforms bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col"
+          initial={{
+          opacity: 0,
+          x: 200
+        }}
+        whileInView ={{
+          opacity: 1,
+          x: 0
+        }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
+        }}
+          >
             <h2 className="text-[#3b82f6] font-poppins font-semibold text-lg">Tools & Platforms</h2>
             <ul className="flex flex-wrap justify-around">
               <div className="flex flex-col gap-4">
@@ -163,7 +204,9 @@ const Skills = () => {
               </div>
     
             </ul>
-          </div>
+          </motion.div>
+
+
         </div>
     </div>
   )
