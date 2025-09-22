@@ -9,14 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "devicon-react-svg": "^0.2.4",
     "lucide-react": "^0.544.0",
-    "motion": "^12.23.16",
+    "motion": "^12.23.18",
     "next": "15.5.3",
     "nodemailer": "^7.0.6",
     "react": "^19.1.0",
     "react-dom": "19.1.0",
-    "react-scroll": "^1.9.3"
+    "react-scroll": "^1.9.3",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

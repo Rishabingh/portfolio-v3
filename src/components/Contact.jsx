@@ -60,7 +60,8 @@ const Contact = () => {
             <div className='grid grid-cols-2 mt-4 gap-x-2'>
               <div className='flex flex-col gap-4'>
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" placeholder="Name" id="name" className='bg-slate-950 px-3 py-2 rounded'
+                <input type="text" name="name" placeholder="Name" id="name" 
+                className='bg-slate-950 px-3 py-2 rounded hover:ring-1 hover:ring-blue-500 transition-all duration-300 ease-in-out'
                 value={formData.name}
                 onChange={(e) => {
                   setFormData((previous) => {
@@ -72,7 +73,7 @@ const Contact = () => {
 
               <div className='flex flex-col gap-4'>
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" placeholder="Email" id="email" className='bg-slate-950 px-3 py-2 rounded'
+                <input type="email" name="email" placeholder="Email" id="email" className='bg-slate-950 px-3 py-2 rounded hover:ring-1 hover:ring-blue-500 transition-all duration-300 ease-in-out'
                 value={formData.email}
                 onChange={(e) => {
                   setFormData((prev) => {
@@ -84,7 +85,7 @@ const Contact = () => {
 
               <div className='col-span-2 flex flex-col gap-4 mt-4'>
                 <label htmlFor="message">Message</label>
-                <textarea name="message" placeholder="Your message" id="message" rows={4} className='bg-slate-950 px-3 py-2 rounded-xl resize-none'
+                <textarea name="message" placeholder="Your message" id="message" rows={4} className='bg-slate-950 px-3 py-2 rounded-xl resize-none hover:ring-1 hover:ring-blue-500 transition-all duration-300 ease-in-out2'
                 value={formData.message}
                 onChange={(e) => {
                   setFormData((prev) => {

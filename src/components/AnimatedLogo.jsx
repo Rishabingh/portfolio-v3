@@ -1,9 +1,15 @@
 'use client'
 import {motion} from 'motion/react'
+import clsx from 'clsx'
 
 const AnimatedLogo = ({className}) => {
   return (
-    <svg width="500" height="500" viewBox="0 0 296 292" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} >
+    <svg 
+      viewBox="0 0 296 292" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg" 
+      className={clsx("w-full h-full", className)} 
+      >
 <g id="animated-circle">
 <motion.g id="outer-circel" filter="url(#filter0_d_4_64)"
   animate={{ rotate: -360 }}
