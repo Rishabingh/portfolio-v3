@@ -2,7 +2,7 @@
 import {motion} from 'motion/react'
 import Image from 'next/image'
 import {MoreHorizontal} from 'lucide-react'
-import { Mail, Copy } from 'lucide-react'
+import { Mail, Copy, LocateIcon, Book, Code } from 'lucide-react'
 import { useState } from 'react'
 
 const About = () => {
@@ -16,161 +16,48 @@ const About = () => {
   setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <div className='lg:w-[65%] mx-auto my-10' id='about'>
-      <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>About</h1>
-      <div className='grid grid-cols-3 gird-rows-2 gap-4'>
-        <motion.div 
-        className='col-span-2 row-span-2 bg-slate-950 p-6 rounded-3xl text-lg tracking-widest leading-8 bg-cover ' 
-        style={{backgroundImage: "url('/laptop-photo-bg.webp')", backgroundSize: 'cover', backgroundPosition: 'center'}}
-        initial={{
-          opacity: 0,
-          x: -200
-        }}
-        whileInView ={{
-          opacity: 1,
-          x: 0
-        }}
-        transition={{
-          duration: 1,
-          ease: "easeInOut"
-        }}
-        >
-            <h2 className="text-[#3b82f6] font-poppins font-semibold my-7">My Journey</h2>
-            <ul className="drop-shadow-lg font-medium list-disc list-inside space-y-2">
-              <li>Full-stack web developer and BCA student with a passion for clean, scalable applications.</li>
-              <li>Started coding in 11th grade and discovered the thrill of turning ideas into interactive products.</li>
-              <li>Enjoy solving complex problems and seeing projects come to life from concept to deployment.</li>
-            </ul>
-        </motion.div>
-
-        <motion.div className='bg-slate-950 p-6 rounded-3xl text-lg tracking-widest leading-8'
-          initial={{
-            opacity: 0,
-            x: 200
-          }}
-          whileInView ={{
-            opacity: 1,
-            x: 0
-          }}
-          transition={{
-            duration: 1.5,
-            ease: "easeInOut"
-          }}
-        >
-          <h2 className="text-[#3b82f6] font-poppins font-semibold">Beyond The Code</h2>
-          <ul className="drop-shadow-lg list-disc list-inside space-y-2">
-            <li>Enjoy exploring new sci-fi books, stories & movies.</li>
-            <li>Love capturing moments through photography.</li>
-            <li>Always curious about creative ideas outside tech.</li>
+    <div className='lg:w-[65%] mx-auto my-10 text-gray-100' id='about'>
+      <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>About Me</h1>
+      <div className='flex gap-8'>
+        <div className='flex-1 flex flex-col'>
+          <span className='text-6xl font-poppins font-medium flex gap-3 flex-col'>Hello again, I am <span className='text-[#3b82f6]'>Rishab Singh</span></span>
+          <ul className='my-4 text-gray-400 flex flex-col gap-4'>
+            <li className='flex gap-1.5'> <LocateIcon /> Delhi, India</li>
+            <li className='flex gap-1.5'> <Book /> Doing Bachelors In Computer Application</li>
+            <li className='flex gap-1.5'> <Code />  Full Stack Developer</li>
           </ul>
-        </motion.div>
-
-        <motion.div 
-        className='bg-slate-950 p-4 rounded-3xl tracking-widest leading-8 text-sm'
-          initial={{
-            opacity: 0,
-            x: 200
-          }}
-          whileInView ={{
-            opacity: 1.5,
-            x: 0
-          }}
-          transition={{
-            duration: 1,
-            ease: "easeInOut"
-          }}
-        >
-
-           <h2 className='text-[#3b82f6] font-poppins font-semibold text-lg'>Technologies</h2>
-           <div className='flex flex-wrap mt-2'>       
-            <ul className="flex flex-wrap gap-3 items-center">
-              <li className="flex items-center gap-2 group">
-                <Image 
-                src="/react-logo.svg" alt="React" width={40} height={40}
-                className="animate-spin group-hover:animate-none"
-                />
-              </li>
-              <li className="flex items-center gap-2">
-                <Image 
-                src="/nextjs-logo.svg" alt="Next.js" width={40} height={40}
-                className="bg-white rounded-md p-1"
-                />
-              </li>
-              <li className="flex items-center gap-2">
-                <Image 
-                src="/js-logo.svg" alt="JavaScript" width={40} height={40}
-                />
-              </li>
-              <li className="flex items-center gap-2">
-                <Image 
-                src="/tailwind-logo.svg" alt="Tailwind CSS" width={40} height={40}
-                />
-              </li>
-             <li className="flex items-center gap-2">
-                 <Image 
-                 src="/node-logo.svg" alt="node" width={40} height={40}
-                 />
-               </li> 
-             <li className="flex items-center gap-2">
-                <Image 
-                src="/mongodb-logo.svg" alt="MongoDB" width={40} height={40}
-                />
-              </li>   
-              <li className="flex items-center gap-2">
-                <Image 
-                src="/express-logo.svg" alt="Express" width={40} height={40}
-                className="bg-white rounded-md p-1"
-                />
-              </li> 
-             <li className="flex items-center gap-2">
-                  <Image 
-                  src="/git-logo.svg" alt="Git" width={40} height={40}
-                  />
-                </li>
-                <li className="flex items-center gap-2">
-                  <Image 
-                  src="/aws-logo.svg" alt="AWS" width={40} height={40}
-                  className="bg-white rounded-md p-1"
-                  />
-                </li> 
-                <li>
-                  <MoreHorizontal />
-                </li>                    
-            </ul>
-            </div>
-         </motion.div>
-
-      </div>
-        <div className='mt-4'>
-
-          <motion.div 
-          className='bg-slate-950 p-6 rounded-3xl text-lg tracking-widest leading-8'
-          initial={{
-            opacity: 0,
-            y: -200
-          }}
-          whileInView ={{
-            opacity: 1,
-            y: 0
-          }}
-          transition={{
-            duration: 1.5,
-            ease: "easeInOut"
-          }}
-          >
-            “I’m currently open to full-time roles, freelance gigs, and collaborative projects where I can contribute, learn, and grow. If you have an idea to discuss or just want to connect, feel free to reach out!
-            <div className='flex gap-4 items-center'>
-             <a href="mailto:rishabsiingh@outlook.com" className='flex gap-3 text-sm p-2 items-center hover:underline-offset-2 hover:underline'><Mail size={20} /> Email : rishabsiingh@outlook.com</a>
-              <button
-                className='flex gap-2 items-center px-2 py-1 rounded-2xl border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white cursor-pointer'
-                onClick={handleCopy}
+            <span className='leading-8'>
+              I’m a full-stack developer from Delhi who loves building web apps that are simple, fast, and easy to use. There's a special satisfaction in working on both the frontend and backend, watching a project come together from start to finish. Alongside my hands-on projects, I'm currently pursuing my Bachelor's in Computer Applications to deepen my understanding of the fundamentals.
+            </span>
+            <div className='flex gap-3 items-baseline-last'>
+              <a href="mailto:rishabsiingh@outlook.com" className='flex gap-3 mt-4 bg-slate-800 text-sm p-2 rounded items-center hover:bg-slate-700 transition-all duration-300 ease-in-out'><Mail /> Get In Touch</a>
+              <button className='px-2 py-2 text-white border border-[#3b82f6] hover:bg-[#3b82f6] hover:text-black rounded flex gap-1.5 transition-all duration-300 ease-in-out items-center justify-center'
+              onClick={handleCopy}
               >
                 <Copy size={20} /> {copied ? '✔ Copied' : 'Copy email'}
-              </button>           
-            </div> 
- 
-          </motion.div>
+                </button>
+            </div>
+        </div>
+        <div className='flex-1'>
+          <h2 className='text-lg text-gray-400 font-medium'>Key Sktills</h2>
+          <ul className='flex gap-3 mt-3 flex-wrap'>
+            <li className='bg-slate-800 p-1 rounded'>React</li>
+            <li className='bg-slate-800 p-1 rounded'>Type Script</li>
+            <li className='bg-slate-800 p-1 rounded'>Next js</li>
+            <li className='bg-slate-800 p-1 rounded'>Node js</li>
+            <li className='bg-slate-800 p-1 rounded'>Express</li>
+            <li className='bg-slate-800 p-1 rounded'>TailwindCSS</li>
+            <li className='bg-slate-800 p-1 rounded'>Aws</li>
+            <li className='bg-slate-800 p-1 rounded'>C++</li>
+            <li className='bg-slate-800 p-1 rounded'>More...</li>
+          </ul>
 
+          <div className='mt-4 flex gap-4 flex-wrap'>
+            <a href="#education" className='px-2 py-2 text-white border border-[#3b82f6] hover:bg-[#3b82f6] hover:text-black rounded flex gap-1.5 transition-all duration-300 ease-in-out items-center justify-center'>See My Education & Certificates</a>
+            <a href="#projects" className='px-2 py-2 text-white border border-[#3b82f6] hover:bg-[#3b82f6] hover:text-black rounded flex gap-1.5 transition-all duration-300 ease-in-out items-center justify-center'>See My Projects</a>
+            <a href="#skills" className='px-2 py-2 text-white border border-[#3b82f6] hover:bg-[#3b82f6] hover:text-black rounded flex gap-1.5 transition-all duration-300 ease-in-out items-center justify-center'>See All Skills</a>
+          </div>
+        </div>
         </div>
     </div>
   )

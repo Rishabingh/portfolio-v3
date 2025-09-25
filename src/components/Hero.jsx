@@ -20,10 +20,8 @@ const Hero = () => {
         </div>
 
         <div className="leading-7 tracking-wide mt-6 max-w-xl mx-auto lg:mx-0">
-          Full-stack developer based in Delhi, India. I specialize in building
-          robust and scalable web applications. My expertise in modern
-          JavaScript frameworks and backend technologies allows me to create
-          seamless digital products.
+          I’m a full-stack developer from Delhi. I like building web apps that are simple, fast, and easy to use.
+          I work on both the frontend and backend, so I enjoy seeing a project come together from start to finish.
         </div>
 
         <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 items-center">
