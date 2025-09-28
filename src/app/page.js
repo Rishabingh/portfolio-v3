@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
         <div 
-          className="min-h-screen w-full bg-cover bg-center bg-no-repeat text-gray-50 pt-48 flex flex-col items-center font-inter bg-black" 
+          className="min-h-screen w-full bg-cover bg-center bg-no-repeat text-gray-50 lg:pt-48 flex flex-col items-center font-inter bg-black" 
           style={{ backgroundImage: "url('/tim-oun-jY_W5x74GTs-unsplash.webp')" }}>
           <Header />
           <Hero />

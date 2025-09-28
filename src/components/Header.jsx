@@ -10,7 +10,7 @@ const Header = () => {
   const [theme, setTheme] = useState("dark")
   const scrolled = useScroll(50)
   return (
-    <div className='fixed left-0 right-0 top-0 z-40'>
+    <div className='fixed left-0 right-0 top-0 z-40 hidden lg:block'>
       <nav className= {`flex justify-around w-full items-center font-inter transition-all duration-300 px-8 ${scrolled ? 'backdrop-blur-md bg-black/30 py-3' : 'bg-transparent py-8'}`}>
         <ul className='flex gap-12 items-center'>
           <li>

@@ -4,9 +4,9 @@ import {motion} from 'motion/react'
 
 const Skills = () => {
   return (
-    <div className='lg:w-[65%] mx-auto my-10' id='skills'>
+    <div className='lg:w-[65%] mx-auto my-10 overflow-x-hidden' id='skills'>
         <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>Skills</h1>
-        <div className='grid grid-cols-3 gap-8'>
+        <div className='grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1 md:px-0 px-4'>
 
           <motion.div className="frontend-development bg-slate-950 p-4 rounded-3xl text-base gap-4 flex flex-col"
           initial={{
