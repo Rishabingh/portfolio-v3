@@ -3,13 +3,13 @@ import ProjectCard from "./ProjectCard"
 import {motion} from 'motion/react'
 const Projects = () => {
   return (
-    <div className="mx-auto my-10 lg:w-[65%] md:px-0 px-4 overflow-x-hidden" id="projects">
+    <div className="mx-auto my-10 lg:w-[65%] lg:px-0 px-4 overflow-x-hidden overflow-y-hidden flex flex-col" id="projects">
       <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>My Projects</h1>
     
       <div className="text-center text-xl tracking-widest leading-8 mb-10 text-wrap">
           I'm passionate about building robust and user-friendly web applications from the ground up. I enjoy turning complex problems into elegant digital solutions. Below are some of the projects I'm most proud of.
       </div>
-      <div className="flex gap-8 md:justify-around md:flex-row flex-col items-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto justify-center items-center">
         <motion.div
          initial={{
           opacity: 0,

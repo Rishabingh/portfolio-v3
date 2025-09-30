@@ -16,9 +16,9 @@ const About = () => {
   setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <div className='lg:w-[65%] mx-auto my-10 text-gray-100 md:px-0 px-4' id='about'>
+    <div className='lg:w-[65%] mx-auto my-10 text-gray-100 lg:px-0 px-5 flex flex-col justify-center items-center' id='about'>
       <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>About Me</h1>
-      <div className='flex gap-8 md:flex-row flex-col'>
+      <div className='flex gap-8 md:flex-row flex-col justify-center mx-auto'>
         <div className='flex-1 flex flex-col'>
           <span className='text-6xl font-poppins font-medium flex gap-3 flex-col'>Hello again, I am <span className='text-[#3b82f6]'>Rishab Singh</span></span>
           <ul className='my-4 text-gray-400 flex flex-col gap-4'>

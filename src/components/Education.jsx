@@ -1,5 +1,4 @@
-'use client'
-import {motion} from 'motion/react'
+
 const Education = () => {
   return (
     <div className="mx-auto my-10 lg:w-[65%] md:px-0 px-4" id="education">
@@ -96,9 +95,9 @@ const Education = () => {
             <div className='border w-[95%] md:w-md border-gray-500 p-5 relative before:content-[""] before:absolute before:top-5 md:before:-left-12 md:before:w-12 before:h-0.5 before:w-4 before:-left-4 before:bg-blue-400'
             
             >
-              <div className='text-4xl'>2022-2023</div>
+              <div className='text-4xl'>2023-2024</div>
 
-              <div className='mt-4 text-2xl'>10th Class, Secodary School</div>
+              <div className='mt-4 text-2xl'>12th Class, Higher Secodary School</div>
 
               <div className='h-1 w-full bg-blue-400 mt-1' />
 
@@ -107,7 +106,7 @@ const Education = () => {
               </div>
 
               <div className='text-gray-300 mt-4 leading-8'>
-                Did my higer Secondary school with Science, Math, English, Hindi, Social Studies, Sanskrit.
+                Did my higer Secondary school with physics, chemistry and math.
               </div>
               <div className='text-xl font-bold mt-4'>Relevant courswork </div>
                 <ul className="list-disc list-inside mt-2 text-gray-400 flex flex-col gap-2.5">

@@ -54,7 +54,7 @@ const Contact = () => {
   return (
     <div className="mx-auto my-10 lg:w-[65%]" id="contact">
        <h1 className='text-4xl font-bold mb-10 text-center font-poppins text-[#3b82f6]'>Contact Me</h1>
-         <div className='lg:w-[50%] mx-auto md:px-0 px-4'>
+         <div className='lg:w-[50%] md:w-[70%] mx-auto lg:px-0 px-4'>
             <div className="text-[#3b82f6] font-poppins font-semibold text-lg mt-4">Get in Touch</div>
             <form>
             <div className='grid grid-cols-2 mt-4 gap-x-2'>
